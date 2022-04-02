@@ -68,22 +68,47 @@ function calculate(val1, val2)
     // document DOM
     let operand = document.getElementById('input3').value;
 
-    if (operand === '+')
-    {
-        result = add(num1, num2);
-    } else if (operand === '-')
-    {
-        result = subtract(num1, num2);
-    } else if (operand === '*')
-    {
-        result = multiply(num1, num2);
-    } else if (operand === '/')
-    {
-        result = division(num1, num2);
-    } else
-    {
-        result = errText;
+    // Using If
+    // if (operand === '+')
+    // {
+    //     result = add(num1, num2);
+    // } else if (operand === '-')
+    // {
+    //     result = subtract(num1, num2);
+    // } else if (operand === '*')
+    // {
+    //     result = multiply(num1, num2);
+    // } else if (operand === '/')
+    // {
+    //     result = division(num1, num2);
+    // } else
+    // {
+    //     result = errText;
+    // }
+
+    // using switch case
+    switch (operand) {
+        case '+': // if (operand === '+')
+            result = add(num1, num2);
+            break;
+
+        case '*':
+            result = multiply(num1, num2);
+            break;
+
+        case '/':
+            result = division(num1, num2);
+            break;
+
+        case '-':
+            result = subtract(num1, num2);
+            break;
+
+        default:
+            result = errText;
+            break;
     }
+
 
     // document DOM
     let resultElement = document.getElementById('result');

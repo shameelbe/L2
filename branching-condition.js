@@ -42,17 +42,17 @@
 // Logical Operator OR || , AND &&, ! NOT, ?? Nullish Coalescing
 // left to right
 
-a = 'shameel';
-b = 'abdul';
-let c = 'javascript';
+// a = 'shameel';
+// b = 'abdul';
+// let c = 'javascript';
 
-if (a === 'shameelsome' || b === 'abdula' || c === 'javascript')
-{
-  console.log(a + " " + b);
-} else 
-{
-    console.log(c);
-}
+// if (a === 'shameelsome' || b === 'abdula' || c === 'javascript')
+// {
+//   console.log(a + " " + b);
+// } else 
+// {
+//     console.log(c);
+// }
 
 // OR
 // true || true - >  true
@@ -77,21 +77,21 @@ if (a === 'shameelsome' || b === 'abdula' || c === 'javascript')
 // a && b || C && d
 // equal to (a && b) || (c && d)
 
-if (!(a === 'shameel1111' && (b === 'abdul12' || c === 'javascript')))
-{
-  console.log(a + " " + b);
-} else 
-{
-    console.log('Invalid');
-}
+// if (!(a === 'shameel1111' && (b === 'abdul12' || c === 'javascript')))
+// {
+//   console.log(a + " " + b);
+// } else 
+// {
+//     console.log('Invalid');
+// }
 
-let input = undefined;
-input = 100;
-// result = (input != undefined) ? input : 'Empty';
+// let input = undefined;
+// input = 100;
+// // result = (input != undefined) ? input : 'Empty';
 
 
-result = input ?? 'Empty';
-console.log(result);
+// result = input ?? 'Empty';
+// console.log(result);
 
 // NEXT classes
 // Switch Case in our next class
@@ -107,3 +107,36 @@ console.log(result);
 // Fibanacci Numbers
 // Odd or Even number
 // Tic Tac Toe
+
+
+
+// Switch Case
+
+// conditon value is 1 print one
+// else value is 2 print two
+
+let val = 2;
+
+if (val === 1)
+{
+  console.log('one');
+} else if (val === 2)
+{
+  console.log('two');
+} else
+{
+  console.log('Neither one nor two');
+}
+
+// Switch case
+switch(val) {
+  case 1:
+    console.log('one');
+    break;
+  case 2:
+    console.log('two');
+    break;
+  default:
+    console.log('Neither one nor two');
+    break;  
+}
