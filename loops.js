@@ -93,6 +93,7 @@ for(data of array1)
     {
         console.log('Found ' + data);
         break;
+        // it will break entire loop or iterations for good
     }
     console.log(data);
 }
@@ -104,5 +105,6 @@ for(data of array1)
     {
         continue;
     }
+    // skips below steps and goes to next in the iteration
     console.log('Processing Data ' + data);
 }

@@ -69,7 +69,9 @@ let student =
 {
     username : "shameel",
     Name : "Shameel Abdul",
-    age : 25
+    age : 25,
+    password: shameel,
+    phone: 4129614606
 }
 
 typeof 0 // number

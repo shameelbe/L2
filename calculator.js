@@ -56,6 +56,9 @@ function addHTMLElement()
 
 function calculate(val1, val2)
 {
+    let resultElement = document.getElementById('result');
+    resultElement.innerText = '';
+
     let num1 = Number(val1);
     let num2 = Number(val2);
     let result = 0;
@@ -111,7 +114,7 @@ function calculate(val1, val2)
 
 
     // document DOM
-    let resultElement = document.getElementById('result');
+    resultElement = document.getElementById('result');
     resultElement.innerText = (result === errText) ? `ERROR - ${result}` : `The result is ${result}`;
     resultElement.style = (result === errText) ? 'color:red' : 'color:blue';
 }
